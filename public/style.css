@@ -204,7 +204,6 @@ nav ul li a:hover::after {
     font-size: 13px;
     font-weight: 300;
     border-radius: 10px;
-    transition: background 0.5s, transform 0.5s;
 }
 
 .services-list div i {
@@ -242,6 +241,34 @@ nav ul li a:hover::after {
 
 
 /* skills***** */
+
+
+#backend {
+    padding: 80px 0;
+    background-color: #111;
+    color: white;
+    text-align: center;
+}
+
+#backend .sub-title {
+    margin-bottom: 20px;
+}
+
+#backend-data {
+    margin-top: 30px;
+    padding: 20px;
+    background: #262626;
+    border-radius: 10px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#backend-data p {
+    margin: 10px 0;
+}
 
 
 
@@ -343,5 +370,59 @@ nav .fa {
     display: none;
 }
 
+@media only screen and (max-width: 600px) {
+    .header-text {
+        margin-top: 100px;
+        font-size: 15px;
+    }
 
+    .header-text h1 {
+        font-size: 20px;
+    }
+
+    nav .fa {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding: 50px;
+        z-index: 2;
+        transition: right 0.3s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px 0;
+    }
+
+    nav ul .fa {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col1,
+    .col2,
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+    }
+
+    #backend-data {
+        width: 90%;
+    }
+}
 

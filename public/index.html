@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Smriti Neupane || Official Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+    <script src="script.js"></script>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <!-- <li><a href="#">Skills</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- <i class="fa-solid fa-xmark" onclick="openmenu()"></i> -->
+
+                </ul>
+                <!-- <i class="fa-solid fa-bars" onclick="closemenu()"></i> -->
+
+
+
+            </nav>
+            <div class="header-text">
+                <h2>Hello,</h2>
+                                <h1> I'm <span>Smriti</span><br />A Backend Enthusiast</h1>
+
+
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col1">
+                    <!-- <img src="./images/image.jpg" alt=""> -->
+                </div>
+                <div class="col2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>    Hello! I'm Smriti Neupane, a CSIT student diving deep into backend development. I specialize in building efficient server-side applications using Node.js and Express.js..</p>
+                    <p> I enjoy designing RESTful APIs, implementing routing, using middleware, and creating real-world backend projects without relying on databases yet. I'm passionate about making scalable, clean, and functional server-side apps.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab( 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab( 'experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab( 'education')">Education</p>
+
+                    </div>
+                    <div class="tab active-tab" id="skills">
+                     <ul>
+                            <li><span>Backend Development</span><br>Node.js, Express.js, Middleware, Routing</li>
+                            <li><span>Frontend Basics</span><br>HTML, CSS, JavaScript</li>
+                            <li><span>Version Control</span><br>Git & GitHub</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab" id="experience">
+                        <ul>
+                        
+                                                  <li><span>2024</span><br>Built RESTful APIs using Node.js and Express</li>
+                            <li><span>2024</span><br>Created backend projects applying custom middleware and routing</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="tab" id="education">
+                        <ul>
+                                  <li><span>2079-Present</span><br>B.Sc. CSIT at Butwal Multiple Campus</li>
+                            <li><span>2079</span><br>Web & UI/UX Training</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- services........  -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                   <h2>Backend Developer</h2>
+                    <p>
+                        I build APIs using Node.js and Express.js, handle routing, apply middleware, and structure backend logic for small applications. I focus on clean code and performance.
+                    </p>
+                    <a href="#backend">Learn more</a>
+
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                     <h2>Frontend Basics</h2>
+                    <p>
+                        I understand the fundamentals of HTML, CSS, and JavaScript and can build simple and responsive UIs that connect with backend services.
+                    </p>
+                    <a href="#">Learn more</a>
+
+                </div>
+                
+             
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ******skills* -->
+    <div id="backend">
+        <div class="container">
+            <h1 class="sub-title">Backend Project</h1>
+            <p>
+                I’ve built a backend project using Node.js and Express.js that showcases routing, middleware, and API development without any database.
+            </p>
+            <div id="backend-data">
+                <p>Loading backend API response...</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- contact*********** -->
+   
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i> smirtineupane197@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-square-phone"></i> 9764344034</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/smirti.neupane.921"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://github.com/smritineupane66"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/smriti1055s"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/My Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required />
+                        <input type="email" name="Email" placeholder="Your Email" required />
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <h4>Copyright © All Rights Reserved</h4>
+            <p>Designed and Developed By</p>
+            <span class="smriti">Smriti Neupane</span>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
