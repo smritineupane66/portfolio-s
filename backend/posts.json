@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "My Backend Journey",
+    "content": "Learning Node.js and Express has been an exciting adventure!",
+    "date": "2025-07-15"
+  },
+  {
+    "id": 2,
+    "title": "Tech Events Participation",
+    "content": "Actively participating in tech events helps me grow and network.",
+    "date": "2025-06-30"
+  },
+  {
+    "id": 3,
+    "title": "Serving as Joint Secretary at CSIT Association of Rupandehi",
+    "content": "As the current Joint Secretary of the CSIT Association of Rupandehi, I actively participate in organizing tech events, managing sponsor communications, and mentoring students. This role allows me to develop strong leadership and teamwork skills while contributing to the growth of our tech community.",
+    "date": "2025-07-15"
+  }
+]
