@@ -1,6 +1,7 @@
 // Fetch data from backend API and display it on the site
 // Fetch backend API data and display it in the backend section
 document.addEventListener("DOMContentLoaded", () => {
+const BASE_URL = "https://smriti-neupane-portfolio.onrender.com";
   const postsContainer = document.getElementById("posts-container");
   const postForm = document.getElementById("post-form");
   const postIdInput = document.getElementById("post-id");
@@ -12,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Fetch and render posts
   function loadPosts() {
-    fetch("/api/posts")
+  fetch(`${BASE_URL}/api/posts`)
       .then((res) => res.json())
       .then((posts) => {
         if (posts.length === 0) {
@@ -57,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const postDiv = e.target.closest(".post");
             const id = postDiv.getAttribute("data-id");
             if (confirm("Are you sure you want to delete this post?")) {
-              fetch(`/api/posts/${id}`, { method: "DELETE" })
+            fetch(`${BASE_URL}/api/posts/${id}`, { method: "DELETE" })
                 .then((res) => {
                   if (res.status === 204) {
                     loadPosts();
@@ -94,7 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (id) {
       // Update post
-      fetch(`/api/posts/${id}`, {
+      fetch(`${BASE_URL}/api/posts/${id}`,  {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(postData),
@@ -107,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .catch(() => alert("Failed to update post"));
     } else {
       // Create post
-      fetch("/api/posts", {
+     fetch(`${BASE_URL}/api/posts`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(postData),
